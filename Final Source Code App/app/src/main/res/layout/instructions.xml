@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main">
+
+    <Button
+        android:layout_width="155dp"
+        android:layout_height="61dp"
+        android:id="@+id/backBtn"
+        android:layout_gravity="center_horizontal|bottom"
+        android:typeface="monospace"
+        android:textSize="25dp"
+        android:onClick="backMessage"
+        android:background="@drawable/backbutton"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Instructions"
+        android:id="@+id/instTitle"
+        android:layout_gravity="center_horizontal|top"
+        android:textColor="#ffffff"
+        android:textSize="35dp"
+        android:textAlignment="center"
+        android:background="@drawable/textbox2" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="405dp"
+        android:text="Welcome to the NFL Season Simulator. To play, enter your name and select the season you&apos;d like to simulate. Then click start. Once in the game you will be shown two teams and be presented with a choice of which team you think will win. The predicted team is highlighted blue. This does not necessarily mean that this team will win though. It is only based off the computer&apos;s power ranking algorithm. Once you have selected your teams, click the results button to show the winners. Click next to move ot the next page. After completing week 17 you will be shown your perectange of corrects picks vs the computer. Have fun! Thanks and Gig Em&apos;"
+        android:id="@+id/instTitle1"
+        android:layout_gravity="center"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:textAlignment="center" />
+
+</FrameLayout>

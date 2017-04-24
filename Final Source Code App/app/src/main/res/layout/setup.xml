@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/main"
+    android:imeOptions="actionDone"
+    android:singleLine="true">
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="65dp"
+        android:text=" Setup "
+        android:id="@+id/setupTitle"
+        android:textColor="#ffffff"
+        android:textSize="40dp"
+        android:typeface="monospace"
+        android:textAlignment="center"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/textbox2"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true" />
+
+    <Spinner
+        android:id="@+id/seasonSpin"
+        android:layout_width="fill_parent"
+        android:layout_height="46dp"
+        android:background="@android:drawable/btn_dropdown"
+        android:spinnerMode="dropdown"
+        android:textAlignment="center"
+        android:transitionGroup="false"
+        android:layout_gravity="center_vertical"
+        android:layout_row="2"
+        android:layout_column="0"
+        android:layout_below="@+id/seasonHead"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Season Select"
+        android:id="@+id/seasonHead"
+        android:textColor="#ffffff"
+        android:textSize="30dp"
+        android:typeface="monospace"
+        android:textAlignment="center"
+        android:layout_below="@+id/setupSpace1"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/textbox2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Predictor"
+        android:id="@+id/predictorHead"
+        android:textColor="#ffffff"
+        android:textSize="30dp"
+        android:typeface="monospace"
+        android:textAlignment="center"
+        android:layout_below="@+id/setupSpace2"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/textbox2" />
+
+    <Spinner
+        android:id="@+id/perdictSpin"
+        android:layout_width="fill_parent"
+        android:layout_height="46dp"
+        android:background="@android:drawable/btn_dropdown"
+        android:spinnerMode="dropdown"
+        android:textAlignment="center"
+        android:transitionGroup="false"
+        android:layout_gravity="center_vertical"
+        android:layout_row="2"
+        android:layout_column="0"
+        android:layout_below="@+id/predictorHead"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="       "
+        android:id="@+id/setupSpace1"
+        android:textColor="#ffffff"
+        android:textSize="30dp"
+        android:typeface="monospace"
+        android:textAlignment="center"
+        android:layout_below="@+id/setupTitle"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/backBtn1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="       "
+        android:id="@+id/setupSpace2"
+        android:textColor="#ffffff"
+        android:textSize="30dp"
+        android:typeface="monospace"
+        android:textAlignment="center"
+        android:layout_below="@+id/seasonSpin"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="       "
+        android:id="@+id/setupSpace3"
+        android:textColor="#ffffff"
+        android:textSize="30dp"
+        android:typeface="monospace"
+        android:textAlignment="center"
+        android:layout_below="@+id/perdictSpin"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Name"
+        android:id="@+id/nameHead"
+        android:textColor="#ffffff"
+        android:textSize="30dp"
+        android:typeface="monospace"
+        android:textAlignment="center"
+        android:layout_below="@+id/setupSpace3"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/textbox2" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/nameText"
+        android:layout_below="@+id/nameHead"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:background="#dbdbdb"
+        android:textAlignment="viewStart"
+        android:textColor="#000000" />
+
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:id="@+id/startBtn"
+        android:textSize="20dp"
+        android:background="@drawable/startbutton"
+        android:textColor="#ffffff"
+        android:onClick="startMessage"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:id="@+id/backBtn1"
+        android:textSize="20dp"
+        android:background="@drawable/backbutton"
+        android:textColor="#ffffff"
+        android:onClick="backMessage"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

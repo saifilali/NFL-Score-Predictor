@@ -1,0 +1,808 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#8d8d8d">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#033875"
+        android:id="@+id/scrollView"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/main2"
+            android:weightSum="1"
+            android:clickable="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/relativeLayout">
+
+            <!-- Content here -->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="WEEK "
+                android:id="@+id/weekTitle"
+                android:textColor="#ffffff"
+                android:textSize="50dp"
+                android:textAlignment="center"
+                android:background="@drawable/textbox2" />
+
+            <Button
+                android:layout_width="116dp"
+                android:layout_height="30dp"
+                android:id="@+id/ht1"
+                android:background="#8d8d8d"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/weekTitle"
+                android:layout_marginTop="40dp"
+                android:clickable="true"
+                android:editable="false"
+                android:inputType="none"
+                android:textAlignment="center"
+                android:onClick="teamSelect"
+                android:textColor="#000000" />
+
+            <Button
+                android:layout_width="116dp"
+                android:layout_height="30dp"
+                android:id="@+id/ht2"
+                android:background="#8d8d8d"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="20dp"
+                android:clickable="true"
+                android:editable="false"
+                android:inputType="none"
+                android:layout_below="@+id/ht1"
+                android:textAlignment="center"
+                android:onClick="teamSelect"
+                android:textColor="#000000" />
+
+            <Button
+                android:layout_width="116dp"
+                android:layout_height="30dp"
+                android:id="@+id/ht3"
+                android:background="#8d8d8d"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/ht2"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="20dp"
+                android:clickable="true"
+                android:textAlignment="center"
+                android:editable="false"
+                android:inputType="none"
+                android:onClick="teamSelect"
+                android:textColor="#000000" />
+
+            <Button
+                android:layout_width="116dp"
+                android:layout_height="30dp"
+                android:id="@+id/ht4"
+                android:background="#8d8d8d"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/ht3"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="20dp"
+                android:textAlignment="center"
+                android:clickable="true"
+                android:editable="false"
+                android:inputType="none"
+                android:onClick="teamSelect"
+                android:textColor="#000000" />
+
+            <Button
+                android:layout_width="116dp"
+                android:layout_height="30dp"
+                android:id="@+id/at1"
+                android:background="#8d8d8d"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/weekTitle"
+                android:layout_marginTop="40dp"
+                android:textAlignment="center"
+                android:clickable="true"
+                android:editable="false"
+                android:inputType="none"
+                android:onClick="teamSelect"
+                android:textColor="#000000" />
+
+            <Button
+                android:layout_width="116dp"
+                android:layout_height="30dp"
+                android:id="@+id/at2"
+                android:background="#8d8d8d"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="20dp"
+                android:textAlignment="center"
+                android:clickable="true"
+                android:editable="false"
+                android:inputType="none"
+                android:layout_below="@+id/ht1"
+                android:onClick="teamSelect"
+                android:textColor="#000000" />
+
+            <Button
+                android:layout_width="116dp"
+                android:layout_height="30dp"
+                android:id="@+id/at3"
+                android:background="#8d8d8d"
+                android:layout_alignParentEnd="true"
+                android:textAlignment="center"
+                android:layout_below="@+id/at2"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="20dp"
+                android:clickable="true"
+                android:editable="false"
+                android:inputType="none"
+                android:onClick="teamSelect"
+                android:textColor="#000000" />
+
+            <Button
+
+                android:layout_width="116dp"
+                android:layout_height="30dp"
+                android:id="@+id/at4"
+                android:background="#8d8d8d"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/at3"
+                android:layout_alignParentRight="true"
+                android:textAlignment="center"
+                android:layout_marginTop="20dp"
+                android:clickable="true"
+                android:editable="false"
+                android:inputType="none"
+                android:onClick="teamSelect"
+                android:textColor="#000000" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="VS."
+                android:id="@+id/vs1"
+                android:layout_gravity="center_horizontal"
+                android:textIsSelectable="false"
+                android:textSize="20dp"
+                android:textColor="#ffffff"
+                android:layout_alignBottom="@+id/ht1"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/weekTitle"
+                android:layout_marginTop="40dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="VS."
+                android:id="@+id/vs2"
+                android:layout_gravity="center_horizontal"
+                android:textIsSelectable="false"
+                android:textSize="20dp"
+                android:textColor="#ffffff"
+                android:layout_alignBottom="@+id/ht2"
+                android:layout_centerHorizontal="true"
+                android:layout_alignTop="@+id/ht2" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="VS."
+                android:id="@+id/vs3"
+                android:layout_gravity="center_horizontal"
+                android:textIsSelectable="false"
+                android:textSize="20dp"
+                android:textColor="#ffffff"
+                android:layout_alignBottom="@+id/ht3"
+                android:layout_centerHorizontal="true"
+                android:layout_alignTop="@+id/ht3" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="VS."
+                android:id="@+id/vs4"
+                android:layout_gravity="center_horizontal"
+                android:textIsSelectable="false"
+                android:textSize="20dp"
+                android:textColor="#ffffff"
+                android:layout_alignBottom="@+id/ht4"
+                android:layout_centerHorizontal="true"
+                android:layout_alignTop="@+id/ht4" />
+
+            <Button
+                android:layout_width="116dp"
+                android:layout_height="30dp"
+                android:id="@+id/ht5"
+                android:background="#8d8d8d"
+                android:clickable="true"
+                android:editable="false"
+
+                android:inputType="none"
+                android:layout_below="@+id/ht4"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="20dp"
+                android:onClick="teamSelect"
+                android:textColor="#000000" />
+
+            <Button
+                android:layout_width="116dp"
+                android:layout_height="30dp"
+                android:id="@+id/ht6"
+                android:background="#8d8d8d"
+                android:clickable="true"
+                android:editable="false"
+                android:inputType="none"
+                android:textAlignment="center"
+                android:layout_below="@+id/ht5"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="20dp"
+                android:onClick="teamSelect"
+                android:textColor="#000000" />
+
+            <Button
+                android:layout_width="116dp"
+                android:layout_height="30dp"
+                android:id="@+id/ht7"
+                android:background="#8d8d8d"
+                android:clickable="true"
+                android:editable="false"
+                android:textAlignment="center"
+                android:inputType="none"
+                android:layout_below="@+id/ht6"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="20dp"
+                android:onClick="teamSelect"
+                android:textColor="#000000" />
+
+            <Button
+                android:layout_width="116dp"
+                android:layout_height="30dp"
+                android:id="@+id/ht8"
+                android:background="#8d8d8d"
+                android:clickable="true"
+                android:textAlignment="center"
+                android:editable="false"
+                android:inputType="none"
+                android:layout_below="@+id/ht7"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="20dp"
+                android:onClick="teamSelect"
+                android:textColor="#000000" />
+
+            <Button
+                android:layout_width="116dp"
+                android:layout_height="30dp"
+                android:id="@+id/ht9"
+                android:background="#8d8d8d"
+                android:clickable="true"
+                android:editable="false"
+                android:textAlignment="center"
+                android:inputType="none"
+                android:layout_below="@+id/ht8"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="20dp"
+                android:onClick="teamSelect"
+                android:textColor="#000000" />
+
+            <Button
+                android:layout_width="116dp"
+                android:layout_height="30dp"
+                android:id="@+id/ht10"
+                android:background="#8d8d8d"
+                android:layout_alignParentStart="true"
+                android:clickable="true"
+                android:editable="false"
+                android:textAlignment="center"
+                android:inputType="none"
+                android:layout_below="@+id/ht9"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="20dp"
+                android:onClick="teamSelect"
+                android:textColor="#000000" />
+
+            <Button
+                android:layout_width="116dp"
+                android:layout_height="30dp"
+                android:id="@+id/ht11"
+                android:background="#8d8d8d"
+                android:layout_alignParentStart="true"
+                android:clickable="true"
+                android:editable="false"
+                android:textAlignment="center"
+                android:inputType="none"
+                android:layout_below="@+id/ht10"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="20dp"
+                android:onClick="teamSelect"
+                android:textColor="#000000" />
+
+            <Button
+                android:layout_width="116dp"
+                android:layout_height="30dp"
+                android:id="@+id/ht12"
+                android:background="#8d8d8d"
+                android:layout_alignParentStart="true"
+                android:clickable="true"
+                android:editable="false"
+                android:textAlignment="center"
+                android:inputType="none"
+                android:layout_below="@+id/ht11"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="20dp"
+                android:onClick="teamSelect"
+                android:textColor="#000000" />
+
+            <Button
+                android:layout_width="116dp"
+                android:layout_height="30dp"
+                android:id="@+id/ht13"
+                android:background="#8d8d8d"
+                android:clickable="true"
+                android:editable="false"
+                android:inputType="none"
+                android:textAlignment="center"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/ht12"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="20dp"
+                android:onClick="teamSelect"
+                android:textColor="#000000" />
+
+            <Button
+                android:layout_width="116dp"
+                android:layout_height="30dp"
+                android:id="@+id/ht14"
+                android:background="#8d8d8d"
+                android:clickable="true"
+                android:editable="false"
+                android:textAlignment="center"
+                android:inputType="none"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/ht13"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="20dp"
+                android:onClick="teamSelect"
+                android:textColor="#000000" />
+
+            <Button
+                android:layout_width="116dp"
+                android:layout_height="30dp"
+                android:id="@+id/ht15"
+                android:background="#8d8d8d"
+                android:clickable="true"
+                android:editable="false"
+                android:textAlignment="center"
+                android:inputType="none"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/ht14"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="20dp"
+                android:onClick="teamSelect"
+                android:textColor="#000000" />
+
+            <Button
+                android:layout_width="116dp"
+                android:layout_height="30dp"
+                android:id="@+id/ht16"
+                android:background="#8d8d8d"
+                android:clickable="true"
+                android:editable="false"
+                android:textAlignment="center"
+                android:inputType="none"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/ht15"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="20dp"
+                android:onClick="teamSelect"
+                android:textColor="#000000" />
+
+            <Button
+                android:layout_width="116dp"
+                android:layout_height="30dp"
+                android:id="@+id/at5"
+                android:background="#8d8d8d"
+                android:textAlignment="center"
+                android:clickable="true"
+                android:editable="false"
+                android:inputType="none"
+                android:layout_below="@+id/ht4"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="20dp"
+                android:onClick="teamSelect"
+                android:textColor="#000000" />
+
+            <Button
+                android:layout_width="116dp"
+                android:layout_height="30dp"
+                android:id="@+id/at6"
+                android:background="#8d8d8d"
+                android:textAlignment="center"
+                android:layout_alignParentEnd="true"
+                android:clickable="true"
+                android:editable="false"
+                android:inputType="none"
+                android:layout_below="@+id/at5"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="20dp"
+                android:onClick="teamSelect"
+                android:textColor="#000000" />
+
+            <Button
+                android:layout_width="116dp"
+                android:layout_height="30dp"
+                android:id="@+id/at7"
+                android:background="#8d8d8d"
+                android:textAlignment="center"
+                android:layout_alignParentEnd="true"
+                android:clickable="true"
+                android:editable="false"
+                android:inputType="none"
+                android:layout_below="@+id/at6"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="20dp"
+                android:onClick="teamSelect"
+                android:textColor="#000000" />
+
+            <Button
+                android:layout_width="116dp"
+                android:layout_height="30dp"
+                android:id="@+id/at8"
+                android:background="#8d8d8d"
+                android:textAlignment="center"
+                android:layout_alignParentEnd="true"
+                android:clickable="true"
+                android:editable="false"
+                android:inputType="none"
+                android:layout_below="@+id/at7"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="20dp"
+                android:onClick="teamSelect"
+                android:textColor="#000000" />
+
+            <Button
+                android:layout_width="116dp"
+                android:textAlignment="center"
+                android:layout_height="30dp"
+                android:id="@+id/at9"
+                android:background="#8d8d8d"
+                android:clickable="true"
+                android:editable="false"
+                android:inputType="none"
+                android:layout_below="@+id/ht8"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="20dp"
+                android:onClick="teamSelect"
+                android:textColor="#000000" />
+
+            <Button
+                android:layout_width="116dp"
+                android:layout_height="30dp"
+                android:id="@+id/at10"
+                android:background="#8d8d8d"
+                android:textAlignment="center"
+                android:layout_alignParentEnd="true"
+                android:clickable="true"
+                android:editable="false"
+                android:inputType="none"
+                android:layout_below="@+id/at9"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="20dp"
+                android:onClick="teamSelect"
+                android:textColor="#000000" />
+
+            <Button
+                android:layout_width="116dp"
+                android:layout_height="30dp"
+                android:id="@+id/at11"
+                android:background="#8d8d8d"
+                android:textAlignment="center"
+                android:layout_alignParentEnd="true"
+                android:clickable="true"
+                android:editable="false"
+                android:inputType="none"
+                android:layout_below="@+id/at10"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="20dp"
+                android:onClick="teamSelect"
+                android:textColor="#000000" />
+
+            <Button
+                android:layout_width="116dp"
+                android:layout_height="30dp"
+                android:id="@+id/at12"
+                android:background="#8d8d8d"
+                android:layout_alignParentEnd="true"
+                android:clickable="true"
+                android:editable="false"
+                android:inputType="none"
+                android:textAlignment="center"
+                android:layout_below="@+id/at11"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="20dp"
+                android:onClick="teamSelect"
+                android:textColor="#000000" />
+
+            <Button
+                android:layout_width="116dp"
+                android:layout_height="30dp"
+                android:id="@+id/at13"
+                android:background="#8d8d8d"
+                android:clickable="true"
+                android:editable="false"
+                android:inputType="none"
+                android:textAlignment="center"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/at12"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="20dp"
+                android:onClick="teamSelect"
+                android:textColor="#000000" />
+
+            <Button
+                android:layout_width="116dp"
+                android:layout_height="30dp"
+                android:id="@+id/at14"
+                android:background="#8d8d8d"
+                android:textAlignment="center"
+                android:layout_alignParentEnd="true"
+                android:clickable="true"
+                android:editable="false"
+                android:inputType="none"
+                android:layout_below="@+id/at13"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="20dp"
+                android:onClick="teamSelect"
+                android:textColor="#000000" />
+
+            <Button
+                android:layout_width="116dp"
+                android:layout_height="30dp"
+                android:id="@+id/at15"
+                android:background="#8d8d8d"
+                android:textAlignment="center"
+                android:layout_alignParentEnd="true"
+                android:clickable="true"
+                android:editable="false"
+                android:inputType="none"
+                android:layout_below="@+id/at14"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="20dp"
+                android:onClick="teamSelect"
+                android:textColor="#000000" />
+
+            <Button
+                android:layout_width="116dp"
+                android:layout_height="30dp"
+                android:id="@+id/at16"
+                android:background="#8d8d8d"
+                android:textAlignment="center"
+                android:layout_alignParentEnd="true"
+                android:clickable="true"
+                android:editable="false"
+                android:inputType="none"
+                android:layout_below="@+id/at15"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="20dp"
+                android:onClick="teamSelect"
+                android:textColor="#000000" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="VS."
+                android:id="@+id/vs5"
+                android:layout_gravity="center_horizontal"
+                android:textIsSelectable="false"
+                android:textSize="20dp"
+                android:textColor="#ffffff"
+                android:layout_alignTop="@+id/at5"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="VS."
+                android:id="@+id/vs6"
+                android:layout_gravity="center_horizontal"
+                android:textIsSelectable="false"
+                android:textSize="20dp"
+                android:textColor="#ffffff"
+                android:layout_alignTop="@+id/ht6"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="VS."
+                android:id="@+id/vs7"
+                android:layout_gravity="center_horizontal"
+                android:textIsSelectable="false"
+                android:textSize="20dp"
+                android:textColor="#ffffff"
+                android:layout_alignTop="@+id/ht7"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="VS."
+                android:id="@+id/vs8"
+                android:layout_gravity="center_horizontal"
+                android:textIsSelectable="false"
+                android:textSize="20dp"
+                android:textColor="#ffffff"
+                android:layout_alignTop="@+id/ht8"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="VS."
+                android:id="@+id/vs9"
+                android:layout_gravity="center_horizontal"
+                android:textIsSelectable="false"
+                android:textSize="20dp"
+                android:textColor="#ffffff"
+                android:layout_alignTop="@+id/ht9"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="VS."
+                android:id="@+id/vs10"
+                android:layout_gravity="center_horizontal"
+                android:textIsSelectable="false"
+                android:textSize="20dp"
+                android:textColor="#ffffff"
+                android:layout_alignTop="@+id/ht10"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="VS."
+                android:id="@+id/vs11"
+                android:layout_gravity="center_horizontal"
+                android:textIsSelectable="false"
+                android:textSize="20dp"
+                android:textColor="#ffffff"
+                android:layout_alignTop="@+id/ht11"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="VS."
+                android:id="@+id/vs12"
+                android:layout_gravity="center_horizontal"
+                android:textIsSelectable="false"
+                android:textSize="20dp"
+                android:textColor="#ffffff"
+                android:layout_alignTop="@+id/ht12"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="VS."
+                android:id="@+id/vs13"
+                android:layout_gravity="center_horizontal"
+                android:textIsSelectable="false"
+                android:textSize="20dp"
+                android:textColor="#ffffff"
+                android:layout_alignTop="@+id/ht13"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="VS."
+                android:id="@+id/vs14"
+                android:layout_gravity="center_horizontal"
+                android:textIsSelectable="false"
+                android:textSize="20dp"
+                android:textColor="#ffffff"
+                android:layout_alignTop="@+id/ht14"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="VS."
+                android:id="@+id/vs15"
+                android:layout_gravity="center_horizontal"
+                android:textIsSelectable="false"
+                android:textSize="20dp"
+                android:textColor="#ffffff"
+                android:layout_alignTop="@+id/ht15"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="VS."
+                android:id="@+id/vs16"
+                android:layout_gravity="center_horizontal"
+                android:textIsSelectable="false"
+                android:textSize="20dp"
+                android:textColor="#ffffff"
+                android:layout_alignTop="@+id/ht16"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="BYE&apos;S"
+                android:id="@+id/byesTitle"
+                android:textColor="#ffffff"
+                android:textSize="40dp"
+                android:textAlignment="center"
+                android:layout_marginTop="600dp"
+                android:background="@drawable/textbox2"
+                android:layout_below="@+id/ht5"
+                android:layout_alignParentStart="true" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:id="@+id/byesFeild"
+                android:textColor="#ffffff"
+                android:editable="false"
+                android:inputType="none"
+                android:layout_above="@+id/showBtn"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="55dp"
+                android:layout_alignParentEnd="true" />
+
+            <ImageView
+                android:layout_width="116dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/bottomSpace"
+                android:clickable="true"
+                android:editable="false"
+                android:inputType="none"
+                android:layout_below="@+id/ht1"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="1000dp"
+                android:layout_alignParentStart="true" />
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:id="@+id/showBtn"
+                android:background="@drawable/showresults"
+                android:textColor="#ffffff"
+                android:onClick="showMessage"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/bottomSpace" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
